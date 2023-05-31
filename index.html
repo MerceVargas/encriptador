@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <title>encriptador</title>
+</head>
+<h1 class="bienvenidos">  Bienvenidos al Encriptador Alura </h1>
+
+<body>
+    <header>
+        <img class= "logo" src="imagenes/Vector.png" alt= "logo de alura">
+    </header>
+
+    <main>
+       
+   
+        <section>
+           
+        <textarea class="text-area"  cols="30" rows="10" input type= "text" name="letras" onkeypress="return sololetras(event)" placeholder="Ingrese el texto aquí" ></textarea>
+       
+        <div class="botones">
+            <button class="btn-encriptar" onclick ="btnEncriptar()"> Encriptar </button>
+            <button class="btn-desencriptar" onclick ="btnDesencriptar()"> Desencriptar </button>
+           
+        </div>
+        <div class="informacion">
+            
+            <h4 class="letraminuscula">Solo letras minúsculas</h4>
+          
+                
+       
+         </div>
+        
+         </section>
+       
+         <section>
+            <textarea class="mensaje" cols="20" rows="10" input type="text" value="Hello World" id="myInput"></textarea> 
+         <div>
+            
+            <button class="copiar" onclick="btnCopiar()"> Copiar </button>
+           
+         </div>
+         </section>
+       
+    </main>
+  
+    
+        
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p class="copyright"> Copyright Encriptador Challenge  </p>
+    <p class="one">ONE G5<br> Mercedes Vargas <br> 2023</p>
+</footer>
+</html>
